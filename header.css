@@ -1,0 +1,84 @@
+@charset "UTF-8";
+header {
+  height: 75px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header #header_Main {
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #header_Main #header_Main_Icon {
+  height: 45px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+
+header #header_Main #header_Main_Lang {
+  height: 45px;
+  width: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header #header_Nav_Wrapper {
+  height: 30px;
+  background-color: #FF5792;
+  position: relative;
+}
+
+header #header_Nav_Wrapper #header_Nav {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+header #header_Nav_Wrapper #header_Nav ul {
+  max-width: 1060px;
+  /* メニューの最大幅 */
+  min-width: 550px;
+  /* メニューの最小幅 */
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+header #header_Nav_Wrapper #header_Nav ul li {
+  float: left;
+  width: 110px;
+  /* メニューの個別の幅 */
+  text-align: center;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 771px) {
+  header #header_Nav_Wrapper #header_Nav ul li {
+    width: 20%;
+  }
+}
+
+header #header_Nav_Wrapper #header_Nav ul li + li {
+  border-left: none;
+}
+
+header #header_Nav_Wrapper #header_Nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+#BodyWrapper {
+  background-color: #ffe2ec;
+  margin: 75px 0 0 0;
+  padding-bottom: 10px;
+}
+
+#TopImageWrapper img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ContentType1 {
+  width: 90%;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.ContentType1 .ContentType1_Topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ContentType1 .ContentType1_Topic img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto 0;
+}
+
+.ContentType1 .ContentType1_Topic h2 {
+  margin: auto 0;
+  font-size: 30px;
+}
+
+.ContentType1 hr {
+  background-color: #FF5792;
+  height: 4px;
+  border: none;
+  margin: 2px 0 4px 0;
+}
+
+.ContentType1 .ContentType1_Body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ContentType1 .ContentType1_Body .ContentType1_Image {
+  width: 50%;
+}
+
+.ContentType1 .ContentType1_Body .ContentType1_Image img {
+  width: 100%;
+}
+
+.ContentType1 .ContentType1_Body .ContentType1_Text {
+  width: 50%;
+}
+/*# sourceMappingURL=index.css.map */

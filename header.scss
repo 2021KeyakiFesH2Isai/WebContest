@@ -1,0 +1,73 @@
+header{
+    height: 75px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    #header_Main{
+        height: 45px;
+        display: flex;
+
+        #header_Main_Icon{
+            height: 45px;
+            width: 150px;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        #header_Main_Lang{
+            height: 45px;
+            width: 45px;
+            object-fit: cover;
+        }
+    }
+
+    #header_Nav_Wrapper{
+        height: 30px;
+        background-color: #FF5792;
+        position: relative;
+        
+
+        #header_Nav{
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; // 慣性スクロール
+            
+            
+            ul{
+                max-width: 1060px; /* メニューの最大幅 */
+                min-width: 550px; /* メニューの最小幅 */
+                height: 30px;
+                line-height: 30px;
+                margin: 0 auto;
+                padding: 0;
+                list-style: none;
+
+                li{
+                    float: left;
+                    width: 110px; /* メニューの個別の幅 */
+                    @media only screen and (min-width: 771px){
+                        width: 20%;
+                    }
+
+                    text-align: center;
+                    border-left: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    box-sizing: border-box;
+                    +li{
+                        border-left: none;
+                    }
+
+                    a{
+                        display: inline-block;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
