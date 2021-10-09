@@ -6,6 +6,7 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
+    font-family: serif;
     
     #header_Main{
         height: 45px;
@@ -27,7 +28,7 @@ header{
 
     #header_Nav_Wrapper{
         height: 30px;
-        background-color: #FF5792;
+        background-color: #4F825B;
         position: relative;
         
 
@@ -49,7 +50,7 @@ header{
                 li{
                     float: left;
                     width: 110px; /* メニューの個別の幅 */
-                    @media only screen and (min-width: 771px){
+                    @media only screen and (min-width: 550px){
                         width: 20%;
                     }
 

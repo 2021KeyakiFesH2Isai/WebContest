@@ -3,22 +3,71 @@ body {
 }
 
 #BodyWrapper {
-  background-color: #ffe2ec;
+  background-color: #0d2c1c;
   margin: 75px 0 0 0;
   padding-bottom: 10px;
+  font-family: serif;
 }
 
 #TopImageWrapper img {
   width: 100%;
-  height: 300px;
+  height: calc(100vh - 75px);
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#Topic {
+  color: white;
+  text-align: center;
+}
+
+.ContentType2 {
+  color: white;
+  width: 95%;
+  margin: auto;
+}
+
+.ContentType2 h1 {
+  text-align: center;
+}
+
+.ContentType2 p {
+  width: 80%;
+  margin: auto;
+}
+
+#SDGsCoop #SDGsCoop_Images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+#SDGsCoop #SDGsCoop_Images img {
+  width: 45%;
+}
+
+#SDGsCoop p {
+  color: white;
+  text-align: center;
+  width: 95%;
+}
+
+.PageMenu a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  color: white;
 }
 
 .ContentType1 {
   width: 90%;
   margin: 10px auto;
-  background-color: white;
   border-radius: 10px;
   padding: 3%;
 }
@@ -40,13 +89,7 @@ body {
 .ContentType1 .ContentType1_Topic h2 {
   margin: auto 0;
   font-size: 30px;
-}
-
-.ContentType1 hr {
-  background-color: #FF5792;
-  height: 4px;
-  border: none;
-  margin: 2px 0 4px 0;
+  color: white;
 }
 
 .ContentType1 .ContentType1_Body {
@@ -65,5 +108,19 @@ body {
 
 .ContentType1 .ContentType1_Body .ContentType1_Text {
   width: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ContentType1 .ContentType1_Body .ContentType1_Text a {
+  display: block;
+  margin: auto 10px 10px 10px;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */
