@@ -8,8 +8,8 @@
     <link rel="icon" href="Images/PlaceHolder.jpg">
 
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -17,31 +17,15 @@
 <body>
 
 
-<header><!--ヘッダー-->
-    <div id="header_Main">
-        <!--中央にアイコン-->
-        <img src="Images/PlaceHolder.jpg" id="header_Main_Icon">
-
-        <!--言語アイコン-->
-        <img src="Images/PlaceHolder.jpg" id="header_Main_Lang">
-    </div>
-
-    <div id="header_Nav_Wrapper">
-        <div id="header_Nav">
-            <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">くらべてみる</a></li>
-                <li><a href="#">くわしくみる</a></li>
-                <li><a href="#">問題点をみる</a></li>
-                <li><a href="#">教育の大切さ</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
+<div id="header"></div>
 
 <div id="BodyWrapper"> <!--コンテンツ-->
     <div id="TopImageWrapper"> <!--ページの最初に来る画像-->
-        <img src="Images/PlaceHolder.jpg">
+        <ul class="slider"><!--sliderから持ってくる slick（https://kenwheeler.github.io/slick/）-->
+            <li class="slider-item slider-item01"></li>
+            <li class="slider-item slider-item02"></li>
+            <li class="slider-item slider-item03"></li>
+        </ul>
     </div>
 
     <div class="ContentType2"><!--大見出し+テキスト-->
@@ -57,7 +41,7 @@
 
     <div id="SDGsCoop"><!--アイコンとSDGsアイコン並列-->
         <div id="SDGsCoop_Images">
-            <img src="Images/PlaceHolder.jpg">
+            <img src="Images/Icon_Square.jpg">
             <img src="Images/SDGsIcon.png">
         </div>
         <p>私たちは持続可能な開発目標（SDGs）を支援しています。</p>
@@ -130,4 +114,9 @@
     <p>あああ</p>
     <p>あああ</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="index.js"></script>
+
 </body>
+
+
