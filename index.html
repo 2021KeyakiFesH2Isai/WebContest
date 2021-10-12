@@ -5,19 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>くらべてわかる！教育</title>
-    <link rel="icon" href="Images/PlaceHolder.jpg">
+    <link rel="icon" href="Images/Icon_Square.jpg">
 
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    
 </head>
 <body>
 
-
-<div id="header"></div>
+<header></header>
 
 <div id="BodyWrapper"> <!--コンテンツ-->
     <div id="TopImageWrapper"> <!--ページの最初に来る画像-->
@@ -105,15 +101,16 @@
     </div>
 </div>
 
-<footer>
-    <h3>
-        サイトマップ
-    </h3>
-    <p>あああ</p>
-    <p>あああ</p>
-    <p>あああ</p>
-    <p>あああ</p>
-</footer>
+<footer></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    
+        $("footer").load("footer.html",function(){});
+        $("header").load("header.html",function(){});
+    
+</script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="index.js"></script>
 

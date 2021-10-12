@@ -1,5 +1,6 @@
-$(function(){ //ヘッダー挿入
-    $("#header").load("header.html");
+$(function(){
+
+
 
     $('.slider').slick({
 		fade:true,//切り替えをフェードで行う。初期値はfalse。
