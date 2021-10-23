@@ -25,6 +25,30 @@ header{
             width: 45px;
             object-fit: cover;
         }
+
+        #search-wrap {
+            position: absolute;/*絶対配置にして*/
+            z-index: 10;/*最前面に設定。数字は変更可*/
+            top:2px;
+            right:50px;
+            #search-text{
+                -webkit-appearance:none;/*SafariやChromeのデフォルトの設定を無効*/
+                width: 25px;/*テキスト入力エリアが伸びる前の横幅*/
+                height: 25px;
+                padding: 8px;
+                border: none;
+                background:#fff url("Images/SearchTmp.png") no-repeat 9px center;/*虫眼鏡アイコンを背景に表示*/
+                background-size: 25px 25px;
+                transition: all 0.5s;/*transitionを使ってスムースに伸ばす*/
+                outline: none;
+                cursor: pointer;/*カーソルを指マークに*/
+                &:focus{
+                    width: 250px;/*テキスト入力エリアが伸びる後の横幅*/
+                    padding: 8px 0 8px 60px;
+                    box-shadow: 0 2px rgba(6,0,1,.26);
+                }
+            }
+        }
     }
 
     //下のとこ
@@ -63,15 +87,34 @@ header{
                 border-left: none;
             }
             a{
+                position: relative;
                 color: #fff;
                 width: 100%;
                 height: 100%;
                 display: inline-block;
                 text-decoration: none;
                 transition: .3s;
-            }:hover{
-                color: #4F825B;
-                background-color: #fff;
+                &:hover{
+                    color: #4F825B;
+                    background-color: #fff;
+                    &::after{
+                        transform: scale(1,1);
+                    }
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 3px;
+                    left: 10%;
+                    width: 80%;
+                    height: 2px;
+                    background:#4F825B;
+                    transform:scale(0,1);
+                    transition: .3s;
+                    transform-origin: center top;
+                }
+
             }
         }
     }
