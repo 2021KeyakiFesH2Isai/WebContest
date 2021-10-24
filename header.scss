@@ -43,9 +43,10 @@ header{
                 outline: none;
                 cursor: pointer;/*カーソルを指マークに*/
                 &:focus{
-                    width: 250px;/*テキスト入力エリアが伸びる後の横幅*/
+                    width: 200px;/*テキスト入力エリアが伸びる後の横幅*/
                     padding: 8px 0 8px 60px;
                     box-shadow: 0 2px rgba(6,0,1,.26);
+                    background-color: #eee;
                 }
             }
         }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>くらべてわかる！教育</title>
+    <link rel="icon" href="Images/Icon_Square.jpg">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="jquery.rwdImageMaps.js"></script>
+    <script>
+        $(function(){
+        $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+
+</head>
+<body>
+
+<header></header>
+
+<div id="BodyWrapper"> <!--コンテンツ-->
+    <div>
+        <img src="Images/worldMap.svg" usemap="#worldMap" alt="" style="width: 90%; display: block; margin: auto;">
+        <map name="worldMap">
+            <area shape="poly" coords="1707,205,1705,236,1717,253,1681,285,1699,302,1699,300,1741,277,1732,236,1739,217,1739,217" href="#" alt="" />
+            <area shape="poly" coords="359,186,334,238,339,277,354,295,428,312,452,339,526,312,542,341,547,309,590,278,588,257,647,217,646,196,591,217,563,226,545,194,517,186,517,186" href="#" alt="" />
+
+        </map>
+    </div>
+
+    <div class="ContentType2"><!--大見出し+テキスト-->
+        <h1>
+            地域で比べてみよう
+        </h1>
+        <p>
+            いい感じのやつ
+        </p>
+    </div>
+
+</div>
+
+
+
+<footer></footer>
+
+
+
+<script>
+    
+        $("footer").load("footer.html",function(){});
+        $("header").load("header.html",function(){});
+    
+</script>
+<script src="index.js"></script>
+
+</body>

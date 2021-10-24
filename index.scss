@@ -34,7 +34,7 @@ body{
             height: calc(100vh - 75px);/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
             background-repeat: no-repeat;/*背景画像をリピートしない*/
             background-position: center;/*背景画像の位置を中央に*/
-            background-size: contain;/*背景画像が.slider-item全体を覆い表示*/
+            background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
     }
         
         /*矢印の設定*/
@@ -137,13 +137,44 @@ body{
     }
 }
 
-//ページ遷移用メニュー
-.PageMenu{
-    a{
-        display: block;
-        width: fit-content;
-        margin: auto;
-        color: white;
+//ページ遷移用
+.linkText{
+    position: relative;
+    cursor: pointer;
+    //形
+    background-color: white;
+    height: 36px;
+	box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px white;
+    border-radius: 15px;
+    width: 200px;
+    margin: 20px auto;
+    //テキスト
+    padding: 0 0 0 40px;
+    p{
+        text-decoration: none;
+        color: #4F825B;
+        text-align: center;
+        margin: 0;
+        line-height: 36px;
+    }
+    &::after{
+        content: '';
+        /*絶対配置で矢印の位置を決める*/
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        translate: (-50%,-50%);
+        /*矢印の形状*/    
+        width: 5px;
+        height: 5px;
+        border-top: 2px solid #4F825B;
+        border-right: 2px solid #4F825B;
+        transform: rotate(45deg);
+    }
+
+    &:hover{
+        background-color: #eee;
+        box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px #eee;
     }
 }
 

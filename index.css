@@ -46,7 +46,7 @@ body {
   /*背景画像をリピートしない*/
   background-position: center;
   /*背景画像の位置を中央に*/
-  background-size: contain;
+  background-size: cover;
   /*背景画像が.slider-item全体を覆い表示*/
 }
 
@@ -161,13 +161,47 @@ body {
   width: 95%;
 }
 
-.PageMenu a {
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
-  color: white;
+.linkText {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  height: 36px;
+  -webkit-box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px white;
+          box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px white;
+  border-radius: 15px;
+  width: 200px;
+  margin: 20px auto;
+  padding: 0 0 0 40px;
+}
+
+.linkText p {
+  text-decoration: none;
+  color: #4F825B;
+  text-align: center;
+  margin: 0;
+  line-height: 36px;
+}
+
+.linkText::after {
+  content: '';
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  translate: -50%, -50%;
+  /*矢印の形状*/
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #4F825B;
+  border-right: 2px solid #4F825B;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.linkText:hover {
+  background-color: #eee;
+  -webkit-box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px #eee;
+          box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px #eee;
 }
 
 .ContentType1 {

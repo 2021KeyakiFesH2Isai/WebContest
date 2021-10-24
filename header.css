@@ -61,11 +61,12 @@ header #header_Main #search-wrap #search-text {
 }
 
 header #header_Main #search-wrap #search-text:focus {
-  width: 250px;
+  width: 200px;
   /*テキスト入力エリアが伸びる後の横幅*/
   padding: 8px 0 8px 60px;
   -webkit-box-shadow: 0 2px rgba(6, 0, 1, 0.26);
           box-shadow: 0 2px rgba(6, 0, 1, 0.26);
+  background-color: #eee;
 }
 
 header #header_Nav {
