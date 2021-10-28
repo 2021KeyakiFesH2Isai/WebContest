@@ -227,3 +227,31 @@ body{
         }
     }
 }
+
+.country{
+    width: 90%;
+    margin: auto;
+    color: #fff;
+
+    .country-title{
+        height: 30px;
+        display: flex;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        h2{
+            margin: 0;
+            height: 30px;
+        }
+    }
+    .country-content{
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            margin-left: 20px;
+        }
+    }
+}

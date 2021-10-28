@@ -262,4 +262,37 @@ body {
   margin: auto 10px 10px 10px;
   color: white;
 }
+
+.country {
+  width: 90%;
+  margin: auto;
+  color: #fff;
+}
+
+.country .country-title {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.country .country-title img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.country .country-title h2 {
+  margin: 0;
+  height: 30px;
+}
+
+.country .country-content h3 {
+  margin: 0;
+}
+
+.country .country-content p {
+  margin: 0;
+  margin-left: 20px;
+}
 /*# sourceMappingURL=index.css.map */
