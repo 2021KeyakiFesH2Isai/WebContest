@@ -8,6 +8,7 @@ body {
   margin: 75px 0 0 0;
   padding-bottom: 10px;
   font-family: serif;
+  color: #fff;
 }
 
 #TopImageWrapper {
@@ -126,21 +127,6 @@ body {
   text-align: center;
 }
 
-.ContentType2 {
-  color: white;
-  width: 95%;
-  margin: auto;
-}
-
-.ContentType2 h1 {
-  text-align: center;
-}
-
-.ContentType2 p {
-  width: 80%;
-  margin: auto;
-}
-
 #SDGsCoop #SDGsCoop_Images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,65 +188,6 @@ body {
   background-color: #eee;
   -webkit-box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px #eee;
           box-shadow: 0 0 0 3px #4F825B, 0 0 0 6px #eee;
-}
-
-.ContentType1 {
-  width: 90%;
-  margin: 10px auto;
-  border-radius: 10px;
-  padding: 3%;
-}
-
-.ContentType1 .ContentType1_Topic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.ContentType1 .ContentType1_Topic img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: auto 0;
-}
-
-.ContentType1 .ContentType1_Topic h2 {
-  margin: auto 0;
-  font-size: 30px;
-  color: white;
-}
-
-.ContentType1 .ContentType1_Body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.ContentType1 .ContentType1_Body .ContentType1_Image {
-  width: 50%;
-}
-
-.ContentType1 .ContentType1_Body .ContentType1_Image img {
-  width: 100%;
-}
-
-.ContentType1 .ContentType1_Body .ContentType1_Text {
-  width: 50%;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.ContentType1 .ContentType1_Body .ContentType1_Text a {
-  display: block;
-  margin: auto 10px 10px 10px;
-  color: white;
 }
 
 .country {
